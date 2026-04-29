@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, MapPin, Phone, Mail } from "lucide-react";
+import { ArrowRight, MapPin, Phone, Mail, Linkedin } from "lucide-react";
 import { TrustStrip } from "../components/TrustStrip";
 
 export default function AboutPage() {
@@ -19,6 +19,47 @@ export default function AboutPage() {
           giving Indian businesses the digital toolkit they need to compete and
           win — locally, nationally, and online.
         </p>
+      </div>
+
+      {/* MEET THE FOUNDER */}
+      <div className="mb-20 p-7 md:p-8 bg-surface border border-border rounded-2xl">
+        <div className="flex flex-col sm:flex-row gap-6 items-start">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/founder-photo.svg"
+            alt="Ashwini Kumar Maurya — Founder, Apex Digital Bharat"
+            width={120}
+            height={120}
+            className="w-28 h-28 md:w-32 md:h-32 rounded-2xl object-cover flex-shrink-0"
+          />
+          <div className="flex-1 min-w-0">
+            <div className="text-xs text-accent font-medium uppercase tracking-wider mb-2">
+              Meet the founder
+            </div>
+            <h2 className="font-serif text-2xl md:text-3xl font-normal tracking-tighter mb-1">
+              Ashwini Kumar Maurya, PhD
+            </h2>
+            <p className="text-sm text-muted mb-4">
+              Founder, Apex Digital Bharat
+            </p>
+            <p className="text-base text-muted leading-relaxed mb-5">
+              PhD-trained, founder-led. Building Apex to give every Indian
+              business — from neighbourhood retailers to enterprise teams —
+              the digital toolkit they need to compete and win. When you
+              message Apex, you&apos;re messaging me directly.
+            </p>
+            <a
+              href="https://www.linkedin.com/in/ashwini-m-phd-02140112/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-deep transition-colors"
+            >
+              <Linkedin className="w-4 h-4" />
+              Connect on LinkedIn
+              <ArrowRight className="w-3.5 h-3.5" />
+            </a>
+          </div>
+        </div>
       </div>
 
       {/* WHY */}
