@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, MapPin, Phone, Mail } from "lucide-react";
+import { TrustStrip } from "../components/TrustStrip";
 
 export default function AboutPage() {
   return (
@@ -141,6 +142,9 @@ export default function AboutPage() {
           Send a project brief
           <ArrowRight className="w-4 h-4" />
         </Link>
+        <div className="flex justify-center mt-6">
+          <TrustStrip />
+        </div>
       </div>
     </div>
   );

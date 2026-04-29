@@ -12,7 +12,11 @@ import {
   ShieldCheck,
   HandCoins,
   Handshake,
+  FileText,
+  MessageCircle,
+  CheckCircle2,
 } from "lucide-react";
+import { TrustStrip } from "./components/TrustStrip";
 
 export default function Home() {
   return (
@@ -35,7 +39,7 @@ export default function Home() {
             multi-state enterprises. One partner. End-to-end.
           </p>
 
-          <div className="reveal reveal-3 flex flex-col sm:flex-row gap-3 mb-16">
+          <div className="reveal reveal-3 flex flex-col sm:flex-row gap-3 mb-4">
             <Link href="/contact" className="btn-primary">
               Start a project
               <ArrowRight className="w-4 h-4" />
@@ -45,12 +49,13 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="reveal reveal-4 flex flex-wrap gap-x-12 gap-y-6 pt-8 border-t border-border">
-            <Pillar label="Web" />
-            <Pillar label="AI & automation" />
-            <Pillar label="UI/UX" />
-            <Pillar label="Marketing" />
-            <Pillar label="Local SEO" />
+          <TrustStrip className="reveal reveal-3 mb-16" />
+
+          <div className="reveal reveal-4 grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-6 pt-8 border-t border-border">
+            <Stat number="2026" label="Founded · Made in Bharat" />
+            <Stat number="Solo-led" label="Founder-built, not outsourced" />
+            <Stat number="5" label="Services under one roof" />
+            <Stat number="< 1 hr" label="WhatsApp reply window" />
           </div>
         </div>
       </section>
@@ -176,6 +181,37 @@ export default function Home() {
         </div>
       </section>
 
+      {/* WHAT HAPPENS NEXT */}
+      <section className="px-6 py-24 max-w-6xl mx-auto">
+        <div className="text-xs text-accent font-medium uppercase tracking-wider mb-3 text-center">
+          What happens next
+        </div>
+        <h2 className="font-serif text-3xl md:text-4xl font-normal tracking-tighter mb-12 text-center max-w-2xl mx-auto">
+          From brief to first commit, in under a week.
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          <NextStep
+            num="01"
+            icon={<FileText className="w-4 h-4 text-accent" />}
+            title="Send a brief"
+            body="Tell us what you want to build — services needed, timeline, budget range. 2 minutes via the form, or just WhatsApp us."
+          />
+          <NextStep
+            num="02"
+            icon={<MessageCircle className="w-4 h-4 text-accent" />}
+            title="We reply within 24 hours"
+            body="Quick acknowledgement plus one clarifying question. No bots, no SDR scripts — straight from the founder."
+          />
+          <NextStep
+            num="03"
+            icon={<CheckCircle2 className="w-4 h-4 text-accent" />}
+            title="Full quote within 48 hours"
+            body="Clear scope, fixed price, milestone breakdown, realistic timeline. No obligation. The brief is yours to keep either way."
+          />
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="px-6 py-32 max-w-6xl mx-auto text-center">
         <h2 className="font-serif text-4xl md:text-5xl font-normal tracking-tighter mb-6">
@@ -190,15 +226,44 @@ export default function Home() {
           Send a project brief
           <ArrowRight className="w-4 h-4" />
         </Link>
+        <TrustStrip className="mt-6 justify-center" />
       </section>
     </>
   );
 }
 
-function Pillar({ label }: { label: string }) {
+function Stat({ number, label }: { number: string; label: string }) {
   return (
-    <div className="text-sm text-muted">
-      <div className="font-medium text-ink">{label}</div>
+    <div>
+      <div className="font-serif text-2xl md:text-3xl font-medium tracking-tighter">
+        {number}
+      </div>
+      <div className="text-xs text-muted mt-1 leading-snug">{label}</div>
+    </div>
+  );
+}
+
+function NextStep({
+  num,
+  icon,
+  title,
+  body,
+}: {
+  num: string;
+  icon: React.ReactNode;
+  title: string;
+  body: string;
+}) {
+  return (
+    <div className="bg-bg p-7 rounded-xl border border-border">
+      <div className="flex items-center gap-3 mb-4">
+        <div className="font-serif text-xl text-accent">{num}</div>
+        <div className="w-8 h-8 bg-accent-soft rounded-md flex items-center justify-center">
+          {icon}
+        </div>
+      </div>
+      <div className="font-medium text-ink mb-2">{title}</div>
+      <p className="text-sm text-muted leading-relaxed">{body}</p>
     </div>
   );
 }

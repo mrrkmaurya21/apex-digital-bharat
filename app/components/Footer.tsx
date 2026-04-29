@@ -22,8 +22,8 @@ export function Footer() {
               from local retailers to multi-state enterprises.
             </p>
             <div className="mt-6 text-xs text-subtle">
-              <div>Razorpay verified · GST registered</div>
-              <div className="mt-1">apexbharatdigital@gmail.com</div>
+              <div>apexbharatdigital@gmail.com</div>
+              <div className="mt-1">+91 70520 67066</div>
             </div>
           </div>
 

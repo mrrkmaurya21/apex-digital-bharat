@@ -12,6 +12,7 @@ import {
   Check,
   Sparkles,
 } from "lucide-react";
+import { TrustStrip } from "../components/TrustStrip";
 
 const briefSchema = z.object({
   fullName: z.string().min(2, "Please enter your full name"),
@@ -105,11 +106,13 @@ export default function ContactPage() {
         Let&apos;s build something{" "}
         <em className="text-accent italic font-light">great.</em>
       </h1>
-      <p className="text-lg text-muted leading-relaxed mb-12 max-w-2xl">
+      <p className="text-lg text-muted leading-relaxed mb-6 max-w-2xl">
         Tell us about your project. Whether it&apos;s a new idea or an existing
         system that needs a revamp — we&apos;re ready. We respond to every
         brief within 48 hours.
       </p>
+
+      <TrustStrip className="mb-12" />
 
       {/* QUICK CONTACT */}
       <div className="grid sm:grid-cols-3 gap-3 mb-16">
@@ -262,7 +265,8 @@ export default function ContactPage() {
               {submitting ? "Sending..." : "Send project brief"}
               <ArrowRight className="w-4 h-4" />
             </button>
-            <p className="text-xs text-subtle mt-4">
+            <TrustStrip className="mt-4" />
+            <p className="text-xs text-subtle mt-3">
               We respect your privacy. We&apos;ll only contact you about your
               project.
             </p>
