@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Linkedin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -23,7 +22,7 @@ export function Footer() {
               from local retailers to multi-state enterprises.
             </p>
             <div className="mt-6 text-xs text-subtle">
-              <div>apexbharatdigital@gmail.com</div>
+              <div>apex.bharat.digital@gmail.com</div>
               <div className="mt-1">+91 70520 67066</div>
             </div>
           </div>
@@ -122,20 +121,8 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-xs text-subtle">
-          <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
-            <span>
-              © {new Date().getFullYear()} Apex Digital Bharat. Made in Bharat.
-            </span>
-            <span className="hidden sm:inline">·</span>
-            <a
-              href="https://www.linkedin.com/in/ashwini-m-phd-02140112/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 hover:text-ink transition-colors"
-            >
-              <Linkedin className="w-3 h-3" />
-              Built by Ashwini Kumar Maurya, PhD
-            </a>
+          <div>
+            © {new Date().getFullYear()} Apex Digital Bharat. Made in Bharat.
           </div>
           <div className="font-serif italic">
             Software, design, and growth — under one roof.

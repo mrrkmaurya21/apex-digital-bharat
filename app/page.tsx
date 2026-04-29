@@ -53,7 +53,7 @@ export default function Home() {
 
           <div className="reveal reveal-4 grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-6 pt-8 border-t border-border">
             <Stat number="2026" label="Founded · Made in Bharat" />
-            <Stat number="Solo-led" label="Founder-built, not outsourced" />
+            <Stat number="In-house" label="Senior team, not outsourced" />
             <Stat number="5" label="Services under one roof" />
             <Stat number="< 1 hr" label="WhatsApp reply window" />
           </div>
@@ -201,7 +201,7 @@ export default function Home() {
             num="02"
             icon={<MessageCircle className="w-4 h-4 text-accent" />}
             title="We reply within 24 hours"
-            body="Quick acknowledgement plus one clarifying question. No bots, no SDR scripts — straight from the founder."
+            body="Quick acknowledgement plus one clarifying question. No bots, no SDR scripts — straight from our team."
           />
           <NextStep
             num="03"

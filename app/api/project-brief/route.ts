@@ -61,7 +61,7 @@ export async function POST(request: NextRequest) {
     if (resend) {
       await resend.emails.send({
         from: "Apex Digital Bharat <noreply@apexdigitalbharat.com>",
-        to: process.env.FOUNDER_EMAIL || "apexbharatdigital@gmail.com",
+        to: process.env.FOUNDER_EMAIL || "apex.bharat.digital@gmail.com",
         subject: `🚀 New project brief: ${company} (${serviceLabel})`,
         html: `
           <div style="font-family: system-ui, sans-serif; max-width: 600px; margin: 0 auto;">

@@ -28,10 +28,10 @@ export default function PrivacyPage() {
             Apex Digital Bharat is a Google Business Profile management service
             operated from Gorakhpur, Uttar Pradesh, India. You can reach us at{" "}
             <a
-              href="mailto:apexbharatdigital@gmail.com"
+              href="mailto:apex.bharat.digital@gmail.com"
               className="text-accent hover:underline"
             >
-              apexbharatdigital@gmail.com
+              apex.bharat.digital@gmail.com
             </a>{" "}
             or on WhatsApp at +91 70520 67066.
           </p>
@@ -87,10 +87,10 @@ export default function PrivacyPage() {
           <p>
             You can ask us to delete or export your data at any time by emailing{" "}
             <a
-              href="mailto:apexbharatdigital@gmail.com"
+              href="mailto:apex.bharat.digital@gmail.com"
               className="text-accent hover:underline"
             >
-              apexbharatdigital@gmail.com
+              apex.bharat.digital@gmail.com
             </a>
             . We respond within 7 business days.
           </p>

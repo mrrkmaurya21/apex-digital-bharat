@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, MapPin, Phone, Mail, Linkedin } from "lucide-react";
+import { ArrowRight, MapPin, Phone, Mail, Users, Code2, Palette, Megaphone } from "lucide-react";
 import { TrustStrip } from "../components/TrustStrip";
 
 export default function AboutPage() {
@@ -21,44 +21,26 @@ export default function AboutPage() {
         </p>
       </div>
 
-      {/* MEET THE FOUNDER */}
-      <div className="mb-20 p-7 md:p-8 bg-surface border border-border rounded-2xl">
-        <div className="flex flex-col sm:flex-row gap-6 items-start">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/founder-photo.svg"
-            alt="Ashwini Kumar Maurya — Founder, Apex Digital Bharat"
-            width={120}
-            height={120}
-            className="w-28 h-28 md:w-32 md:h-32 rounded-2xl object-cover flex-shrink-0"
-          />
-          <div className="flex-1 min-w-0">
-            <div className="text-xs text-accent font-medium uppercase tracking-wider mb-2">
-              Meet the founder
-            </div>
-            <h2 className="font-serif text-2xl md:text-3xl font-normal tracking-tighter mb-1">
-              Ashwini Kumar Maurya, PhD
-            </h2>
-            <p className="text-sm text-muted mb-4">
-              Founder, Apex Digital Bharat
-            </p>
-            <p className="text-base text-muted leading-relaxed mb-5">
-              PhD-trained, founder-led. Building Apex to give every Indian
-              business — from neighbourhood retailers to enterprise teams —
-              the digital toolkit they need to compete and win. When you
-              message Apex, you&apos;re messaging me directly.
-            </p>
-            <a
-              href="https://www.linkedin.com/in/ashwini-m-phd-02140112/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent-deep transition-colors"
-            >
-              <Linkedin className="w-4 h-4" />
-              Connect on LinkedIn
-              <ArrowRight className="w-3.5 h-3.5" />
-            </a>
-          </div>
+      {/* MEET THE TEAM */}
+      <div className="mb-20 p-7 md:p-9 bg-surface border border-border rounded-2xl">
+        <div className="text-xs text-accent font-medium uppercase tracking-wider mb-3">
+          Our team
+        </div>
+        <h2 className="font-serif text-2xl md:text-3xl font-normal tracking-tighter mb-4">
+          A highly expert team — fully in-house.
+        </h2>
+        <p className="text-base text-muted leading-relaxed mb-7 max-w-3xl">
+          A small senior team of engineers, designers, and growth specialists
+          building Apex from across India. Combined years of experience
+          shipping digital products for businesses of every scale. When you
+          message Apex, you&apos;re talking to people who will actually do the
+          work — not account managers handing off to offshore teams.
+        </p>
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-3">
+          <ExpertTag icon={<Code2 className="w-4 h-4 text-accent" />} label="Engineering" />
+          <ExpertTag icon={<Palette className="w-4 h-4 text-accent" />} label="Design" />
+          <ExpertTag icon={<Megaphone className="w-4 h-4 text-accent" />} label="Marketing" />
+          <ExpertTag icon={<Users className="w-4 h-4 text-accent" />} label="Strategy" />
         </div>
       </div>
 
@@ -69,22 +51,25 @@ export default function AboutPage() {
         </h2>
         <div className="space-y-5 text-muted leading-relaxed text-base">
           <p>
-            A few years ago, my uncle ran a small clinic in Gorakhpur. Good
-            doctor, loyal patients, decent reputation. Then a new clinic opened
-            two streets away — younger doctor, no real reputation, but a
-            polished website, daily Google updates, and quick review responses.
+            We&apos;ve watched this story play out in town after town across
+            India. A respected doctor, jeweller, salon, or coaching centre —
+            strong reputation, loyal customers — slowly losing new business to
+            a competitor with a polished digital presence: a fast website,
+            daily Google updates, quick review responses, an active WhatsApp
+            channel.
           </p>
           <p>
-            Within a year, his walk-ins dropped 40%. Not because the new clinic
-            was better — but because new patients searching online found{" "}
-            <em>them</em> first. By the time my uncle realised what was
-            happening, the damage was done.
+            Within a year or two, walk-ins drop, calls dry up, the owner
+            wonders what changed. Not because the competitor is better — but
+            because new customers searching online find <em>them</em> first.
+            By the time anyone realises what&apos;s happening, the damage is
+            done.
           </p>
           <p>
-            That story repeats across every town in India — jewellers, salons,
-            coaching centres, restaurants, hospitals, even mid-sized
-            enterprises. Indian businesses aren&apos;t losing to better
-            products. They&apos;re losing to better digital execution.
+            This story repeats across every category — jewellers, restaurants,
+            clinics, coaching centres, retail, even mid-sized enterprises.
+            Indian businesses aren&apos;t losing to better products.
+            They&apos;re losing to better digital execution.
           </p>
           <p>
             <strong className="text-ink font-medium">
@@ -164,8 +149,8 @@ export default function AboutPage() {
           <ContactCard
             icon={<Mail className="w-4 h-4" />}
             label="Email"
-            value="apexbharatdigital@gmail.com"
-            href="mailto:apexbharatdigital@gmail.com"
+            value="apex.bharat.digital@gmail.com"
+            href="mailto:apex.bharat.digital@gmail.com"
           />
         </div>
       </div>
@@ -187,6 +172,23 @@ export default function AboutPage() {
           <TrustStrip />
         </div>
       </div>
+    </div>
+  );
+}
+
+function ExpertTag({
+  icon,
+  label,
+}: {
+  icon: React.ReactNode;
+  label: string;
+}) {
+  return (
+    <div className="flex items-center gap-2.5 p-3 bg-bg border border-border rounded-lg">
+      <div className="w-7 h-7 bg-accent-soft rounded-md flex items-center justify-center flex-shrink-0">
+        {icon}
+      </div>
+      <span className="text-sm font-medium text-ink">{label}</span>
     </div>
   );
 }
