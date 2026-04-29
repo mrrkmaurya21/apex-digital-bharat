@@ -6,23 +6,27 @@ import { Footer } from "./components/Footer";
 export const metadata: Metadata = {
   metadataBase: new URL("https://apexdigitalbharat.com"),
   title: {
-    default: "Apex Digital Bharat — Premium Google Business Profile management for India",
+    default:
+      "Apex Digital Bharat — Digital Solutions for Retail & Enterprise",
     template: "%s · Apex Digital Bharat",
   },
   description:
-    "Premium Google Business Profile management for India's ambitious local businesses. Weekly content, review management, Q&A handled by our team. Starting at ₹1,999/month.",
+    "End-to-end digital partner for Indian businesses. Web platforms, AI workflows, brand systems, growth campaigns, and Local SEO — for retail SMBs to multi-state enterprises.",
   keywords: [
+    "digital agency India",
+    "web development India",
+    "AI automation India",
+    "UI UX design India",
+    "digital marketing India",
     "Google Business Profile management India",
-    "GBP agency India",
-    "GMB management India",
-    "local SEO India",
-    "Google My Business agency India",
-    "Google Business Profile Delhi Mumbai Bangalore",
+    "enterprise software India",
+    "Indian software company",
+    "Made in Bharat tech",
   ],
   openGraph: {
-    title: "Apex Digital Bharat — Premium GBP management for India",
+    title: "Apex Digital Bharat — Digital solutions for Retail & Enterprise",
     description:
-      "Where India's businesses get found online. Premium Google Business Profile management starting at ₹1,999/month.",
+      "Software, design, and growth — under one roof. End-to-end digital partner for ambitious Indian businesses.",
     url: "https://apexdigitalbharat.com",
     siteName: "Apex Digital Bharat",
     locale: "en_IN",
@@ -30,9 +34,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Apex Digital Bharat — Premium GBP management for India",
+    title: "Apex Digital Bharat — Digital solutions for Retail & Enterprise",
     description:
-      "Where India's businesses get found online. Premium GBP management starting at ₹1,999/month.",
+      "Software, design, and growth — under one roof. End-to-end digital partner for ambitious Indian businesses.",
   },
   robots: {
     index: true,

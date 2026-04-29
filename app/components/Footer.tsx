@@ -17,9 +17,9 @@ export function Footer() {
               />
             </div>
             <p className="text-sm text-muted leading-relaxed max-w-sm">
-              Premium Google Business Profile management for India&apos;s ambitious
-              local businesses. Built in Bharat, serving SMBs across every
-              state — metros to small towns.
+              India&apos;s end-to-end digital partner. We help businesses of
+              every scale build, grow, and dominate their digital presence —
+              from local retailers to multi-state enterprises.
             </p>
             <div className="mt-6 text-xs text-subtle">
               <div>Razorpay verified · GST registered</div>
@@ -29,21 +29,70 @@ export function Footer() {
 
           <div>
             <div className="text-xs uppercase tracking-wider text-accent font-medium mb-4">
-              Product
+              Services
             </div>
             <ul className="space-y-2.5 text-sm text-muted">
-              <li><Link href="/pricing" className="hover:text-ink transition-colors">Pricing</Link></li>
-              <li><Link href="/audit" className="hover:text-ink transition-colors">Free audit</Link></li>
-              <li><Link href="/about" className="hover:text-ink transition-colors">About</Link></li>
-              <li><Link href="/contact" className="hover:text-ink transition-colors">Contact</Link></li>
+              <li>
+                <Link
+                  href="/#services"
+                  className="hover:text-ink transition-colors"
+                >
+                  Web Development
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/#services"
+                  className="hover:text-ink transition-colors"
+                >
+                  AI &amp; Automation
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/#services"
+                  className="hover:text-ink transition-colors"
+                >
+                  UI/UX Design
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/#services"
+                  className="hover:text-ink transition-colors"
+                >
+                  Digital Marketing
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/#services"
+                  className="hover:text-ink transition-colors"
+                >
+                  Local SEO &amp; GBP
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div>
             <div className="text-xs uppercase tracking-wider text-accent font-medium mb-4">
-              Connect
+              Company
             </div>
             <ul className="space-y-2.5 text-sm text-muted">
+              <li>
+                <Link href="/about" className="hover:text-ink transition-colors">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="hover:text-ink transition-colors"
+                >
+                  Contact
+                </Link>
+              </li>
               <li>
                 <a
                   href="https://wa.me/917052067066?text=Hi%20Apex%20Digital%20Bharat"
@@ -54,15 +103,30 @@ export function Footer() {
                   WhatsApp
                 </a>
               </li>
-              <li><Link href="/privacy" className="hover:text-ink transition-colors">Privacy</Link></li>
-              <li><Link href="/terms" className="hover:text-ink transition-colors">Terms</Link></li>
+              <li>
+                <Link
+                  href="/privacy"
+                  className="hover:text-ink transition-colors"
+                >
+                  Privacy
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms" className="hover:text-ink transition-colors">
+                  Terms
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
 
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-xs text-subtle">
-          <div>© {new Date().getFullYear()} Apex Digital Bharat. Made in Bharat.</div>
-          <div className="font-serif italic">Where India&apos;s businesses get found online.</div>
+          <div>
+            © {new Date().getFullYear()} Apex Digital Bharat. Made in Bharat.
+          </div>
+          <div className="font-serif italic">
+            Software, design, and growth — under one roof.
+          </div>
         </div>
       </div>
     </footer>

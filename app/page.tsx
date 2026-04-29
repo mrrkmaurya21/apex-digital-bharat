@@ -1,5 +1,18 @@
 import Link from "next/link";
-import { ArrowRight, Clock, MessageSquare, Search, Check, Sparkles } from "lucide-react";
+import {
+  ArrowRight,
+  Code2,
+  Sparkles,
+  Palette,
+  Megaphone,
+  MapPin,
+  Store,
+  Building2,
+  Layers,
+  ShieldCheck,
+  HandCoins,
+  Handshake,
+} from "lucide-react";
 
 export default function Home() {
   return (
@@ -8,189 +21,157 @@ export default function Home() {
       <section className="px-6 py-20 md:py-28 max-w-6xl mx-auto">
         <div className="max-w-3xl">
           <div className="reveal inline-block px-3 py-1.5 bg-accent-soft text-accent text-[11px] font-medium rounded-full mb-6 uppercase tracking-wider">
-            Premium · Made in Bharat
+            Made in Bharat · End-to-end digital
           </div>
 
           <h1 className="reveal reveal-1 font-serif text-5xl md:text-7xl leading-[1.05] mb-6 font-normal tracking-tightest">
-            Where India&apos;s businesses get{" "}
-            <em className="text-accent italic font-light">found</em> online.
+            Software, design, and growth —{" "}
+            <em className="text-accent italic font-light">under one roof.</em>
           </h1>
 
           <p className="reveal reveal-2 text-lg md:text-xl text-muted leading-relaxed mb-10 max-w-2xl">
-            Premium Google Business Profile management for ambitious local businesses —
-            clinics, jewellers, coaching centers, restaurants. Weekly content, review
-            management, and Q&amp;A handled by our team. Starting at{" "}
-            <span className="text-ink font-medium">₹1,999/month</span>.
+            Web platforms, AI workflows, brand systems, and growth campaigns for
+            ambitious Indian businesses — from single-location retailers to
+            multi-state enterprises. One partner. End-to-end.
           </p>
 
           <div className="reveal reveal-3 flex flex-col sm:flex-row gap-3 mb-16">
-            <Link href="/audit" className="btn-primary">
-              Get a free audit
+            <Link href="/contact" className="btn-primary">
+              Start a project
               <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link href="/pricing" className="btn-secondary">
-              See pricing
+            <Link href="#services" className="btn-secondary">
+              Explore services
             </Link>
           </div>
 
-          <div className="reveal reveal-4 flex flex-wrap gap-12 pt-8 border-t border-border">
-            <div>
-              <div className="font-serif text-3xl font-medium">80%</div>
-              <div className="text-xs text-muted mt-1">Cheaper than Birdeye</div>
-            </div>
-            <div>
-              <div className="font-serif text-3xl font-medium">48hr</div>
-              <div className="text-xs text-muted mt-1">Audit turnaround</div>
-            </div>
-            <div>
-              <div className="font-serif text-3xl font-medium">100%</div>
-              <div className="text-xs text-muted mt-1">Indian team</div>
-            </div>
-            <div>
-              <div className="font-serif text-3xl font-medium">7</div>
-              <div className="text-xs text-muted mt-1">Founding seats left</div>
-            </div>
+          <div className="reveal reveal-4 flex flex-wrap gap-x-12 gap-y-6 pt-8 border-t border-border">
+            <Pillar label="Web" />
+            <Pillar label="AI & automation" />
+            <Pillar label="UI/UX" />
+            <Pillar label="Marketing" />
+            <Pillar label="Local SEO" />
           </div>
         </div>
       </section>
 
-      {/* PROBLEM */}
+      {/* WHAT WE DO */}
       <section id="services" className="px-6 py-24 bg-surface border-y border-border">
         <div className="max-w-6xl mx-auto">
           <div className="text-xs text-accent font-medium uppercase tracking-wider mb-3">
-            The problem
+            What we do
           </div>
           <h2 className="font-serif text-3xl md:text-4xl font-normal tracking-tighter mb-2 max-w-2xl">
-            Your Google Profile is leaking customers.
+            End-to-end digital solutions, one partner.
           </h2>
           <p className="text-muted mb-12 max-w-xl">
-            Most local businesses set up their Google profile once and forget about it.
-            Meanwhile, three things quietly cost you walk-ins every week.
+            Whether you&apos;re a retail store going online or an enterprise
+            modernising operations — we have the expertise to make it happen.
           </p>
 
-          <div className="grid md:grid-cols-3 gap-4">
-            <ProblemCard
-              icon={<Clock className="w-4 h-4 text-accent" />}
-              title="No fresh content for weeks"
-              body="Google ranks active profiles higher. An inactive profile slowly disappears from local search results — and you never see it happen."
+          <div className="grid md:grid-cols-2 gap-4">
+            <ServiceCard
+              icon={<Code2 className="w-4 h-4 text-accent" />}
+              title="Web Development"
+              body="High-performance websites, portals, and web apps built with modern frameworks. From landing pages to complex platforms — responsive, fast, and SEO-ready."
             />
-            <ProblemCard
-              icon={<MessageSquare className="w-4 h-4 text-accent" />}
-              title="Negative reviews unanswered"
-              body="73% of customers read reviews before visiting. Unaddressed bad reviews cost you walk-ins from people who would have given you a chance."
+            <ServiceCard
+              icon={<Sparkles className="w-4 h-4 text-accent" />}
+              title="AI & Automation"
+              body="Intelligent chatbots, workflow automation, predictive analytics, and AI-driven tools that cut costs and unlock new capabilities for your operations."
             />
-            <ProblemCard
-              icon={<Search className="w-4 h-4 text-accent" />}
-              title="Customers find competitors first"
-              body="Every search you don't show up for is a customer walking into someone else's shop. Local SEO is a slow leak — until it isn't."
+            <ServiceCard
+              icon={<Palette className="w-4 h-4 text-accent" />}
+              title="UI/UX Design"
+              body="User-centred design that converts. We craft intuitive interfaces, design systems, and brand identities that make your product stand out and delight users."
+            />
+            <ServiceCard
+              icon={<Megaphone className="w-4 h-4 text-accent" />}
+              title="Digital Marketing"
+              body="SEO, paid advertising, social media strategy, and content marketing that drives real traffic and conversions. Data-driven campaigns with measurable ROI."
+            />
+            <ServiceCard
+              icon={<MapPin className="w-4 h-4 text-accent" />}
+              title="Local SEO & GBP"
+              body="Premium Google Business Profile management — weekly content, review responses, Q&A handled by our team. The fastest path to getting found locally."
+              fullWidth
             />
           </div>
         </div>
       </section>
 
-      {/* SOLUTION / HOW IT WORKS */}
+      {/* WHO WE SERVE */}
       <section className="px-6 py-24 max-w-6xl mx-auto">
         <div className="text-xs text-accent font-medium uppercase tracking-wider mb-3">
-          How it works
+          Who we serve
         </div>
-        <h2 className="font-serif text-3xl md:text-4xl font-normal tracking-tighter mb-12 max-w-2xl">
-          Four steps. Then you stop thinking about it.
+        <h2 className="font-serif text-3xl md:text-4xl font-normal tracking-tighter mb-2 max-w-2xl">
+          Built for every scale of ambition.
         </h2>
+        <p className="text-muted mb-12 max-w-xl">
+          From a single-store retailer to a multi-location enterprise — our
+          solutions meet you where you are and take you where you want to go.
+        </p>
 
-        <div className="grid md:grid-cols-4 gap-8">
-          <Step
-            num="01"
-            title="Free audit"
-            body="We analyze your current Google profile and send a 3-page PDF report within 48 hours — no payment needed."
+        <div className="grid md:grid-cols-2 gap-6">
+          <AudienceCard
+            icon={<Store className="w-5 h-5 text-accent" />}
+            title="Retail & SMBs"
+            body="Digital-first solutions for businesses ready to grow online."
+            bullets={[
+              "E-commerce stores & marketplaces",
+              "Point-of-sale & inventory systems",
+              "Local SEO & Google Business optimisation",
+              "Social media & WhatsApp commerce",
+              "Customer loyalty & CRM platforms",
+            ]}
           />
-          <Step
-            num="02"
-            title="Onboarding call"
-            body="20-minute WhatsApp or phone call. We learn your brand voice, services, festive patterns, and competitive position."
-          />
-          <Step
-            num="03"
-            title="Weekly delivery"
-            body="Posts, review responses, Q&A — all drafted in your brand voice, scheduled and published. You approve via WhatsApp."
-          />
-          <Step
-            num="04"
-            title="Monthly insights"
-            body="Detailed report showing search impressions, customer actions, top queries, and competitor benchmarks."
+          <AudienceCard
+            icon={<Building2 className="w-5 h-5 text-accent" />}
+            title="Enterprise & Institutions"
+            body="Scalable platforms for organisations with complex requirements."
+            bullets={[
+              "Custom ERP & workflow automation",
+              "Multi-tenant SaaS platforms",
+              "Healthcare & education portals",
+              "Compliance-ready data architecture",
+              "Legacy system modernisation",
+            ]}
           />
         </div>
       </section>
 
-      {/* PRICING TEASER */}
+      {/* WHY APEX */}
       <section className="px-6 py-24 bg-surface border-y border-border">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-            <div>
-              <div className="text-xs text-accent font-medium uppercase tracking-wider mb-3">
-                Pricing
-              </div>
-              <h2 className="font-serif text-3xl md:text-4xl font-normal tracking-tighter">
-                Premium service. Honest pricing.
-              </h2>
-              <p className="text-muted mt-3">
-                No setup fees. Cancel anytime. 30-day money-back guarantee.
-              </p>
-            </div>
-            <Link href="/pricing" className="btn-secondary self-start md:self-end">
-              See full pricing
-              <ArrowRight className="w-4 h-4" />
-            </Link>
+          <div className="text-xs text-accent font-medium uppercase tracking-wider mb-3">
+            Why Apex
           </div>
+          <h2 className="font-serif text-3xl md:text-4xl font-normal tracking-tighter mb-12 max-w-2xl">
+            Your growth is our only metric.
+          </h2>
 
-          <div className="grid md:grid-cols-3 gap-3">
-            <PricingCard
-              tier="Starter"
-              price="₹1,999"
-              tagline="For single-location small businesses"
-              features={[
-                "4 weekly posts",
-                "Review responses",
-                "1 GBP location",
-                "Monthly basic report",
-              ]}
+          <div className="grid md:grid-cols-2 gap-6">
+            <WhyCard
+              icon={<Layers className="w-4 h-4 text-accent" />}
+              title="Full-stack expertise"
+              body="One team for design, development, and marketing. No fragmented vendors. No miscommunication. Every part of the work answers to the same people."
             />
-            <PricingCard
-              tier="Growth"
-              price="₹3,499"
-              tagline="For ambitious local businesses"
-              features={[
-                "Everything in Starter",
-                "Q&A management",
-                "Insights report",
-                "WhatsApp support",
-                "Priority turnaround",
-              ]}
-              featured
+            <WhyCard
+              icon={<ShieldCheck className="w-4 h-4 text-accent" />}
+              title="India-first approach"
+              body="We understand Indian markets, compliance standards, and user behaviour — from tier-1 cities to tier-3 towns. Every decision is made with your customer in mind."
             />
-            <PricingCard
-              tier="Pro"
-              price="₹5,999"
-              tagline="For multi-location businesses"
-              features={[
-                "Everything in Growth",
-                "Up to 3 locations",
-                "Competitor tracking",
-                "Ad copy included",
-                "Dedicated manager",
-              ]}
+            <WhyCard
+              icon={<HandCoins className="w-4 h-4 text-accent" />}
+              title="Transparent pricing"
+              body="No hidden costs, no scope-creep surprises. Fixed quotes with milestone-based delivery. You know what you&rsquo;re paying and what you&rsquo;re getting before we start."
             />
-          </div>
-
-          <div className="mt-8 p-5 bg-accent-soft border border-accent-border rounded-xl flex gap-3 items-start">
-            <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
-              <Sparkles className="w-3 h-3 text-bg" />
-            </div>
-            <div className="text-sm text-accent-deep">
-              <strong className="font-medium">Founding Member offer:</strong> First 10
-              clients get the Growth tier locked at{" "}
-              <strong className="font-medium">₹1,499/month forever</strong>. 7 seats
-              remaining.
-            </div>
+            <WhyCard
+              icon={<Handshake className="w-4 h-4 text-accent" />}
+              title="Long-term partnership"
+              body="We don&rsquo;t just build and leave. Ongoing support, optimisation, and scaling as your business grows. We win when you win."
+            />
           </div>
         </div>
       </section>
@@ -198,17 +179,15 @@ export default function Home() {
       {/* CTA */}
       <section className="px-6 py-32 max-w-6xl mx-auto text-center">
         <h2 className="font-serif text-4xl md:text-5xl font-normal tracking-tighter mb-6">
-          Get a free audit.
-          <br />
-          <em className="text-accent italic font-light">No payment needed.</em>
+          Let&apos;s build something{" "}
+          <em className="text-accent italic font-light">great.</em>
         </h2>
         <p className="text-muted mb-10 max-w-xl mx-auto">
-          We&apos;ll analyze your Google Business Profile and send you a detailed PDF
-          report within 48 hours. You decide if you want to work with us — there&apos;s
-          no obligation.
+          Tell us about your project. Whether it&apos;s a new idea or an
+          existing system that needs a revamp — we&apos;re ready.
         </p>
-        <Link href="/audit" className="btn-primary">
-          Get my free audit
+        <Link href="/contact" className="btn-primary">
+          Send a project brief
           <ArrowRight className="w-4 h-4" />
         </Link>
       </section>
@@ -216,17 +195,31 @@ export default function Home() {
   );
 }
 
-function ProblemCard({
+function Pillar({ label }: { label: string }) {
+  return (
+    <div className="text-sm text-muted">
+      <div className="font-medium text-ink">{label}</div>
+    </div>
+  );
+}
+
+function ServiceCard({
   icon,
   title,
   body,
+  fullWidth = false,
 }: {
   icon: React.ReactNode;
   title: string;
   body: string;
+  fullWidth?: boolean;
 }) {
   return (
-    <div className="bg-bg p-6 rounded-lg border border-border hover:-translate-y-1 transition-transform duration-300">
+    <div
+      className={`bg-bg p-6 rounded-lg border border-border hover:-translate-y-1 transition-transform duration-300 ${
+        fullWidth ? "md:col-span-2" : ""
+      }`}
+    >
       <div className="w-8 h-8 bg-accent-soft rounded-md flex items-center justify-center mb-4">
         {icon}
       </div>
@@ -236,60 +229,54 @@ function ProblemCard({
   );
 }
 
-function Step({ num, title, body }: { num: string; title: string; body: string }) {
+function AudienceCard({
+  icon,
+  title,
+  body,
+  bullets,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  body: string;
+  bullets: string[];
+}) {
   return (
-    <div>
-      <div className="font-serif text-2xl text-accent mb-3">{num}</div>
-      <div className="font-medium mb-2">{title}</div>
-      <p className="text-sm text-muted leading-relaxed">{body}</p>
+    <div className="bg-bg p-7 rounded-xl border border-border">
+      <div className="w-10 h-10 bg-accent-soft rounded-lg flex items-center justify-center mb-4">
+        {icon}
+      </div>
+      <div className="font-serif text-2xl font-normal tracking-tighter mb-2">
+        {title}
+      </div>
+      <p className="text-sm text-muted mb-5 leading-relaxed">{body}</p>
+      <ul className="space-y-2 text-sm">
+        {bullets.map((b) => (
+          <li key={b} className="flex items-start gap-2 text-muted">
+            <span className="text-accent mt-0.5 flex-shrink-0">·</span>
+            <span>{b}</span>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
 
-function PricingCard({
-  tier,
-  price,
-  tagline,
-  features,
-  featured = false,
+function WhyCard({
+  icon,
+  title,
+  body,
 }: {
-  tier: string;
-  price: string;
-  tagline: string;
-  features: string[];
-  featured?: boolean;
+  icon: React.ReactNode;
+  title: string;
+  body: string;
 }) {
   return (
-    <div
-      className={`bg-bg p-6 rounded-xl relative ${
-        featured ? "border-2 border-accent" : "border border-border"
-      }`}
-    >
-      {featured && (
-        <div className="absolute -top-2.5 left-6 bg-accent text-bg text-[10px] px-3 py-1 rounded-full font-medium uppercase tracking-wider">
-          Most popular
-        </div>
-      )}
-      <div
-        className={`text-xs font-medium mb-2 ${
-          featured ? "text-accent" : "text-muted"
-        }`}
-      >
-        {tier}
+    <div className="bg-bg p-6 rounded-lg border border-border">
+      <div className="w-8 h-8 bg-accent-soft rounded-md flex items-center justify-center mb-3">
+        {icon}
       </div>
-      <div className="flex items-baseline gap-1 mb-1">
-        <span className="font-serif text-3xl font-medium">{price}</span>
-        <span className="text-xs text-muted">/month</span>
-      </div>
-      <div className="text-xs text-muted mb-5">{tagline}</div>
-      <ul className="space-y-2">
-        {features.map((f) => (
-          <li key={f} className="flex items-center gap-2 text-sm">
-            <Check className="w-3.5 h-3.5 text-accent flex-shrink-0" />
-            <span>{f}</span>
-          </li>
-        ))}
-      </ul>
+      <div className="font-medium text-ink mb-2">{title}</div>
+      <p className="text-sm text-muted leading-relaxed">{body}</p>
     </div>
   );
 }

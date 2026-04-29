@@ -148,8 +148,8 @@ You need WhatsApp Business (not regular WhatsApp) so leads see a proper business
 3. Open WhatsApp Business → register with **+91 70520 67066** → enter the OTP.
 4. Set up business profile:
     - **Business name:** Apex Digital Bharat
-    - **Category:** Marketing & PR
-    - **Description:** Premium Google Business Profile management for India's local businesses. Free audits available.
+    - **Category:** Software & IT services
+    - **Description:** End-to-end digital partner for Indian businesses. Web, AI, design, marketing, and Local SEO — under one roof. Free project consultations.
     - **Address:** your area + Gorakhpur, UP (or skip if you prefer not to publish)
     - **Hours:** 9 AM – 7 PM, Mon–Sat
     - **Email:** apexbharatdigital@gmail.com
@@ -157,12 +157,13 @@ You need WhatsApp Business (not regular WhatsApp) so leads see a proper business
     - **Profile photo:** upload `public/logo.svg` after converting to PNG (use https://cloudconvert.com/svg-to-png — render at 800x800, square)
 5. **Settings** → **Business tools** → **Greeting message** → enable. Suggested copy:
 
-   > Hi! Thanks for messaging Apex Digital Bharat. I'll get back to you within 1 hour during business hours (9 AM – 7 PM IST). For an immediate free GBP audit, you can also fill the form on apexdigitalbharat.com/audit.
+   > Hi! Thanks for messaging Apex Digital Bharat. I'll get back to you within 1 hour during business hours (9 AM – 7 PM IST). To get a quote faster, send a brief at apexdigitalbharat.com/contact — we reply within 48 hours with scope + price.
 
 6. **Business tools** → **Quick replies** → add a few:
-    - `/audit` → "Sure, I can run a free audit on your Google Business Profile. Could you share your business name and city?"
-    - `/pricing` → "Three plans — Starter ₹1,999, Growth ₹3,499, Pro ₹5,999. First 10 founding clients lock Growth at ₹1,499/mo forever. Want me to walk you through?"
-    - `/payment` → "Payment via UPI Autopay through Razorpay. Monthly billing, no lock-in. I'll send a payment link as soon as you're ready."
+    - `/services` → "We do five things: Web development, AI & automation, UI/UX design, digital marketing, and Local SEO. What are you trying to build?"
+    - `/quote` → "Send a project brief at apexdigitalbharat.com/contact and we'll send a clear scope + fixed quote within 48 hours. No obligation."
+    - `/gbp` → "Yes, we manage Google Business Profiles end-to-end — posts, reviews, Q&A, the lot. Send your business name + city and I'll review your profile."
+    - `/payment` → "We accept UPI, bank transfer, and Razorpay payment links. Project billing is milestone-based: 30% start, 40% mid-delivery, 30% on launch."
 7. **Business tools** → **Catalog** → optional, skip for now (revisit after 5 paying clients).
 
 ✅ You should now have: WhatsApp Business showing your branded profile when someone messages +91 70520 67066.
@@ -184,15 +185,12 @@ You need WhatsApp Business (not regular WhatsApp) so leads see a proper business
     - **GST certificate** — *skip* if turnover under ₹20L/year. You can add later. Razorpay accepts non-GST sole prop accounts.
 5. **Settlement bank account:** the account you want client payments to land in. Use your personal savings account (sole prop) or a current account if you have one.
 6. Submit. Razorpay verifies in 1–3 business days.
-7. While waiting, **don't** wire up Razorpay subscriptions in code yet. Per the README, the launch path is: WhatsApp → invoice with Razorpay payment link → done. Building Razorpay subscription embeds is post-launch.
+7. While waiting, **don't** wire up Razorpay subscriptions in code yet. The launch path is: project brief → WhatsApp scope discussion → Razorpay payment link per milestone → done.
 
 After Razorpay approves:
-- Dashboard → **Subscriptions** → **Plans** → create three plans:
-   - `Starter ₹1,999/month` (interval: monthly)
-   - `Growth ₹3,499/month`
-   - `Pro ₹5,999/month`
-   - Plus: `Founding Growth ₹1,499/month` (label clearly so you don't auto-charge non-founding members)
-- For each plan, click **Create subscription link** when a client signs up — paste it into WhatsApp. That's the whole payment flow for now.
+- Dashboard → **Payment Links** is what you'll use for most projects (one-off invoices for milestones).
+- For the productized GBP service, you can optionally create **Subscriptions → Plans** at ₹1,999, ₹3,499, ₹5,999 monthly — useful if you sign multiple GBP-only clients and want recurring billing without re-invoicing.
+- For everything else (Web Dev, AI, UI/UX, Marketing projects), use **Payment Links** with milestone amounts.
 
 ✅ You should now have: Razorpay KYC submitted (status "Verification in progress" is fine to move on from).
 
@@ -200,7 +198,7 @@ After Razorpay approves:
 
 ## 9. Google Search Console + sitemap (10 min)
 
-Tell Google your site exists so it indexes you for "GBP management Gorakhpur" and similar queries.
+Tell Google your site exists so it indexes you for "digital agency India", "web development India", and similar queries.
 
 1. Go to https://search.google.com/search-console.
 2. **Add property** → **URL prefix** → enter `https://apexdigitalbharat.com` → **Continue**.
@@ -214,29 +212,28 @@ Tell Google your site exists so it indexes you for "GBP management Gorakhpur" an
 4. Once verified, **Sitemaps** → submit URL: `https://apexdigitalbharat.com/sitemap.xml`. (We don't generate one yet — flag this for the post-launch sprint. Until we add `next-sitemap`, Google will just crawl from the homepage. Acceptable for week 1.)
 5. Submit individual page URLs for fast indexing — **URL Inspection** → paste each → **Request Indexing**:
     - `https://apexdigitalbharat.com`
-    - `https://apexdigitalbharat.com/pricing`
     - `https://apexdigitalbharat.com/about`
     - `https://apexdigitalbharat.com/contact`
-    - `https://apexdigitalbharat.com/audit`
+    - (Note: `/audit` and `/pricing` now redirect to `/contact` — no need to submit them separately.)
 
 ✅ You should now have: Google Search Console verified for your domain, key pages submitted for indexing.
 
 ---
 
-## 10. End-to-end audit form test (5 min) — DO THIS LAST
+## 10. End-to-end project brief test (5 min) — DO THIS LAST
 
-After everything else is connected, open **https://apexdigitalbharat.com/audit** in incognito and submit a test request with your own details:
+After everything else is connected, open **https://apexdigitalbharat.com/contact** in incognito and submit a test brief with your own details:
 
-- Business name: `Test Business` (so you know to delete the row later)
-- GBP link: any Google Maps link
-- WhatsApp: a number you can check (your own)
+- Full name: `Test User` (so you know to delete the row later)
+- Company: `Test Co.`
 - Email: an email you can check (gmail)
-- Industry: any
-- Problem: "Test submission"
+- Phone: a number you can check (your own)
+- Service: any (e.g., Web Development)
+- Brief: "Test submission — please ignore"
 
 Expected result within 30 seconds:
-1. ✅ Page shows "Audit request received." green confirmation.
-2. ✅ Email lands in **apexbharatdigital@gmail.com** with subject `🔥 New audit request: Test Business`.
+1. ✅ Page shows "Brief received." green confirmation.
+2. ✅ Email lands in **apexbharatdigital@gmail.com** with subject `🚀 New project brief: Test Co. (Website / Web App)`.
 3. ✅ Email lands in the address you typed, subject `Your audit is in the queue — Apex Digital Bharat`.
 4. ✅ New row appears in Supabase → **Table Editor** → `audit_requests` table.
 

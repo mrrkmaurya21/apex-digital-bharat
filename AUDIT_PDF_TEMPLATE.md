@@ -1,6 +1,8 @@
-# Audit PDF Generation — Claude Max workflow
+# GBP Audit PDF — sales tool for Local SEO leads
 
-This is your **lead magnet engine**. Every audit request you receive should generate a 3-page PDF within 15 minutes using this template.
+> **Status: optional.** The free-audit form has been removed from the site (the agency now uses the unified `/contact` project-brief form). This template stays as a **sales tool** — when a project brief comes in tagged "Local SEO & GBP", you can still send the lead a 3-page audit PDF using this prompt to demonstrate quality before quoting.
+
+This was originally the **lead magnet engine** for the productized GBP service. Every audit request would generate a 3-page PDF within 15 minutes using this template. Use it now as a **closing tool** for GBP-vertical leads.
 
 ## How to use
 
