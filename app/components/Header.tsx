@@ -4,13 +4,15 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-bg/85 backdrop-blur-md border-b border-border">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2.5 group">
-          <div className="w-7 h-7 bg-accent rounded-md flex items-center justify-center text-bg font-medium text-sm group-hover:rotate-12 transition-transform duration-300">
-            A
-          </div>
-          <span className="font-serif text-base font-medium tracking-tight">
-            Apex Digital Bharat
-          </span>
+        <Link href="/" className="flex items-center group" aria-label="Apex Digital Bharat — home">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo.svg"
+            alt="Apex Digital Bharat"
+            width={150}
+            height={40}
+            className="h-9 w-auto group-hover:opacity-80 transition-opacity duration-200"
+          />
         </Link>
 
         <nav className="hidden md:flex gap-8 items-center text-sm text-muted">

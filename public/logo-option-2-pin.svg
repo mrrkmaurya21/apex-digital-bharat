@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 64" role="img" aria-label="Apex Digital Bharat">
+  <title>Apex Digital Bharat — Pin</title>
+  <rect width="240" height="64" fill="#FFFEF9"/>
+  <g transform="translate(8 8)">
+    <rect width="48" height="48" rx="10" fill="#C2410C"/>
+    <path d="M 24 9 C 16.5 9 11 14.5 11 21.5 C 11 30 24 39.5 24 39.5 C 24 39.5 37 30 37 21.5 C 37 14.5 31.5 9 24 9 Z" fill="#FFFEF9"/>
+    <circle cx="24" cy="20" r="4" fill="#C2410C"/>
+  </g>
+  <text x="68" y="40"
+        font-family="Fraunces, Georgia, serif"
+        font-size="22" font-weight="500" fill="#1A1A1A"
+        letter-spacing="-0.4">Apex Digital Bharat</text>
+</svg>

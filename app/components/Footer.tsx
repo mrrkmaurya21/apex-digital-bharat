@@ -6,13 +6,15 @@ export function Footer() {
       <div className="max-w-6xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-7 h-7 bg-accent rounded-md flex items-center justify-center text-bg font-medium text-sm">
-                A
-              </div>
-              <span className="font-serif text-base font-medium">
-                Apex Digital Bharat
-              </span>
+            <div className="mb-4">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/logo.svg"
+                alt="Apex Digital Bharat"
+                width={150}
+                height={40}
+                className="h-9 w-auto"
+              />
             </div>
             <p className="text-sm text-muted leading-relaxed max-w-sm">
               Premium Google Business Profile management for India&apos;s ambitious

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 64" role="img" aria-label="Apex Digital Bharat">
+  <title>Apex Digital Bharat — Minimal</title>
+  <rect width="240" height="64" fill="#FFFEF9"/>
+  <text x="8" y="48"
+        font-family="Fraunces, Georgia, serif"
+        font-size="44" font-weight="500" fill="#1A1A1A">A</text>
+  <circle cx="46" cy="42" r="4" fill="#C2410C"/>
+  <text x="68" y="40"
+        font-family="Fraunces, Georgia, serif"
+        font-size="22" font-weight="500" fill="#1A1A1A"
+        letter-spacing="-0.4">Apex Digital Bharat</text>
+</svg>

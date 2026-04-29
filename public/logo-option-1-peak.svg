@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 64" role="img" aria-label="Apex Digital Bharat">
+  <title>Apex Digital Bharat — Peak</title>
+  <rect width="240" height="64" fill="#FFFEF9"/>
+  <g transform="translate(8 8)">
+    <rect width="48" height="48" rx="10" fill="#C2410C"/>
+    <path d="M 11 36 L 24 13 L 37 36" stroke="#FFFEF9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <line x1="17" y1="29" x2="31" y2="29" stroke="#FFFEF9" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text x="68" y="40"
+        font-family="Fraunces, Georgia, serif"
+        font-size="22" font-weight="500" fill="#1A1A1A"
+        letter-spacing="-0.4">Apex Digital Bharat</text>
+</svg>
