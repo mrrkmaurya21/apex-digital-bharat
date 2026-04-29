@@ -125,7 +125,7 @@ export default function AuditPage() {
           <input
             type="text"
             {...register("gbpUrl")}
-            placeholder="https://maps.google.com/... or 'Sharma Jewellers, Civil Lines Gorakhpur'"
+            placeholder="https://maps.google.com/... or 'Sharma Jewellers, Lajpat Nagar Delhi'"
             className="input"
           />
         </Field>

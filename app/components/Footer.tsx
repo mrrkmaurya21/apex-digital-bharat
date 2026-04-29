@@ -18,7 +18,8 @@ export function Footer() {
             </div>
             <p className="text-sm text-muted leading-relaxed max-w-sm">
               Premium Google Business Profile management for India&apos;s ambitious
-              local businesses. Built in Gorakhpur, serving across India.
+              local businesses. Built in Bharat, serving SMBs across every
+              state — metros to small towns.
             </p>
             <div className="mt-6 text-xs text-subtle">
               <div>Razorpay verified · GST registered</div>
@@ -60,7 +61,7 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-xs text-subtle">
-          <div>© {new Date().getFullYear()} Apex Digital Bharat. Made in Gorakhpur, UP.</div>
+          <div>© {new Date().getFullYear()} Apex Digital Bharat. Made in Bharat.</div>
           <div className="font-serif italic">Where India&apos;s businesses get found online.</div>
         </div>
       </div>

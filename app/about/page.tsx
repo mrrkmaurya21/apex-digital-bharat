@@ -10,7 +10,7 @@ export default function AboutPage() {
           About
         </div>
         <h1 className="font-serif text-5xl md:text-6xl font-normal tracking-tightest mb-6">
-          Built in Gorakhpur. <em className="text-accent italic font-light">For all of Bharat.</em>
+          Built in Bharat. <em className="text-accent italic font-light">For all of Bharat.</em>
         </h1>
         <p className="text-lg text-muted leading-relaxed max-w-2xl">
           Apex Digital Bharat is a small team obsessed with one thing: helping local
@@ -47,11 +47,29 @@ export default function AboutPage() {
             <strong className="text-ink font-medium">
               We&apos;re building the agency we wish my uncle had access to.
             </strong>{" "}
-            Premium quality, brutal pricing, productized service. Built in Gorakhpur
-            because that&apos;s where we live and where our cost base lets us serve
-            tier 2/3 properly.
+            Premium quality, brutal pricing, productized service. Built where we
+            live, with a cost base that lets us serve businesses across India
+            properly — from metros to small towns.
           </p>
         </div>
+      </div>
+
+      {/* INDIA REACH */}
+      <div className="mb-20 p-7 bg-accent-soft border border-accent-border rounded-xl">
+        <div className="text-xs text-accent font-medium uppercase tracking-wider mb-3">
+          Across India
+        </div>
+        <h2 className="font-serif text-2xl md:text-3xl font-normal tracking-tighter mb-4 text-accent-deep">
+          Built to serve businesses across India.
+        </h2>
+        <p className="text-base text-accent-deep leading-relaxed">
+          Clinics in Delhi NCR, jewellers in Bengaluru, coaching centres in
+          Lucknow, salons in Hyderabad, restaurants in Mumbai, retail in Pune,
+          spas in Kolkata. Anywhere your customers search &ldquo;near me&rdquo;,
+          we work. <strong className="font-medium">No metro premium, no
+          tier-2 surcharge</strong> — same productized service, same pricing,
+          anywhere in Bharat.
+        </p>
       </div>
 
       {/* HOW WE'RE DIFFERENT */}

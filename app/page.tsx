@@ -8,7 +8,7 @@ export default function Home() {
       <section className="px-6 py-20 md:py-28 max-w-6xl mx-auto">
         <div className="max-w-3xl">
           <div className="reveal inline-block px-3 py-1.5 bg-accent-soft text-accent text-[11px] font-medium rounded-full mb-6 uppercase tracking-wider">
-            Gorakhpur · Made in Bharat
+            Premium · Made in Bharat
           </div>
 
           <h1 className="reveal reveal-1 font-serif text-5xl md:text-7xl leading-[1.05] mb-6 font-normal tracking-tightest">

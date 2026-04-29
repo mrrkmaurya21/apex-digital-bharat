@@ -13,10 +13,11 @@ export const metadata: Metadata = {
     "Premium Google Business Profile management for India's ambitious local businesses. Weekly content, review management, Q&A handled by our team. Starting at ₹1,999/month.",
   keywords: [
     "Google Business Profile management India",
-    "GBP management Gorakhpur",
+    "GBP agency India",
+    "GMB management India",
     "local SEO India",
-    "Google My Business agency",
-    "GMB optimization",
+    "Google My Business agency India",
+    "Google Business Profile Delhi Mumbai Bangalore",
   ],
   openGraph: {
     title: "Apex Digital Bharat — Premium GBP management for India",
