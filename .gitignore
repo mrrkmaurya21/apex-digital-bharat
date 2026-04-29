@@ -1,0 +1,25 @@
+.next/
+node_modules/
+.env
+.env.local
+.env*.local
+.DS_Store
+*.log
+.vercel
+out/
+build/
+dist/
+coverage/
+*.pem
+.idea/
+.vscode/
+
+# Misc
+Thumbs.db
+*.swp
+*.swo
+*.tsbuildinfo
+next-env.d.ts
+
+# Original zip (extracted into root)
+apex-digital-bharat.zip

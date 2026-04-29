@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #FFFEF9;
+  --ink: #1A1A1A;
+  --accent: #C2410C;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Subtle grain texture for premium feel — performance-friendly */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' /%3E%3CfeColorMatrix values='0 0 0 0 0.76 0 0 0 0 0.65 0 0 0 0 0.4 0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+main, header, footer {
+  position: relative;
+  z-index: 2;
+}
+
+/* Premium link hover */
+a.fancy-link {
+  position: relative;
+  display: inline-block;
+}
+
+a.fancy-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+
+a.fancy-link:hover::after {
+  width: 100%;
+}
+
+/* Button styles */
+.btn-primary {
+  background: #1A1A1A;
+  color: #FFFEF9;
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #C2410C;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #1A1A1A;
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  border: 0.5px solid #1A1A1A;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: #1A1A1A;
+  color: #FFFEF9;
+}
+
+/* Stagger reveal animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  animation: fadeUp 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.reveal-1 { animation-delay: 0.1s; }
+.reveal-2 { animation-delay: 0.2s; }
+.reveal-3 { animation-delay: 0.3s; }
+.reveal-4 { animation-delay: 0.4s; }
